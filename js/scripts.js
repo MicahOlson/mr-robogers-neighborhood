@@ -23,14 +23,16 @@ $(document).ready(function() {
   $("#formName").submit(function(event) {
     event.preventDefault();
     visitorName = $("#nameInput").val();
+    $("#showName").text(visitorName);
     $("#formName").hide();
     $("#formNumber").fadeIn();
   })
 
   $("#formNumber").submit(function(event) {
     event.preventDefault();
-    $("#showName").text(visitorName);
-    
-
+    const number = $("#numberInput").val();
+    beepBoop(number).forEach(function(element, index) {
+      $("#resultWithNumbers").append("<li>" + index + " => " + element + "</li>");
+    })
   })
 })

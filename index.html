@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +10,33 @@
   <script src="js/scripts.js"></script>
   <title>Won't You Be My Neighbor?</title>
 </head>
+
 <body>
   <div class="container">
     <h1>Mr. Roboger's Neighborhood</h1>
     <h2>A number/word substitution game.</h2>
     <form class="form-group" id="formName">
-      <label for="nameInput" form="formName">Hello, visitor! Before we start playing the game, what shall we call you?</label>
-      <input type="text" class="form-control" id="nameInput" form="formName" placeholder="Enter your first name" required>
+      <label for="nameInput" form="formName">Hello, visitor! Before we start playing the game, what shall we call
+        you?</label>
+      <input type="text" class="form-control" id="nameInput" form="formName" placeholder="Enter your first name"
+        required>
       <button type="submit" class="btn btn-secondary" form="formName">Submit</button>
     </form>
     <form class="form-group" id="formNumber">
-      <p>Welcome to Mr. Roboger's Neighborhood, <span id="showName"></span>! To play the game, simply enter an number in the box below. When you submit it you'll see the sequence of all numbers from 0 to your number, with some substitutions. Can you figure out the pattern?</p>
+      <p>Welcome to Mr. Roboger's Neighborhood, <span id="showName"></span>!</p>
+      <p>
+        To play the game, simply enter an number in the box below. When you submit it you'll see the sequence of all
+        numbers from 0 to your number, with some zany substitutions. Can you figure out the pattern?
+      </p>
       <label for="numberInput" form="formNumber">Enter a number:</label>
-      <input type="text" class="form-control" id="numberInput" form="formNumber" placeholder="This must be in Arabic numeral format (e.g., 23)" required>
+      <input type="text" class="form-control" id="numberInput" form="formNumber"
+        placeholder="This must be in Arabic numeral format (e.g., 23)" required>
       <button type="submit" class="btn btn-secondary" form="formNumber">Submit</button>
+      <ul id="resultWithNumbers">
+        
+      </ul>
     </form>
   </div>
 </body>
+
 </html>
