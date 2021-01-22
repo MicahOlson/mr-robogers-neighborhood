@@ -17,3 +17,20 @@ function beepBoop(numberAsString) {
   }
   return sequence;
 }
+
+$(document).ready(function() {
+  let visitorName;
+  $("#formName").submit(function(event) {
+    event.preventDefault();
+    visitorName = $("#nameInput").val();
+    $("#formName").hide();
+    $("#formNumber").fadeIn();
+  })
+
+  $("#formNumber").submit(function(event) {
+    event.preventDefault();
+    $("#showName").text(visitorName);
+    
+
+  })
+})
