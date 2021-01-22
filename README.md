@@ -39,7 +39,7 @@ Enter a number and receive a sequence back with some fun word substitutions. Can
 
     * Alternatively, you can navigate to the project directory through your system's GUI file manager, then double-click `index.html` to open it in your default browser  
 
-  * You can also open the project in your code editor of choice to view or edit the code. Here are some recommended code editors:
+  * You can also open the project in your code editor of choice to view or edit the code. Here are some recommended editors:
     * [Visual Studio Code](https://code.visualstudio.com) - "Code editing. Redefined."
     * [Atom](https://atom.io) - "A hackable text editor for the 21st Century"
     * [SublimeText](https://www.sublimetext.com) - "A sophisticated text editor for code, markup and prose" 
