@@ -32,20 +32,23 @@ $(document).ready(function() {
   $("#formNumber").submit(function(event) {
     event.preventDefault();
     const number = $("#numberInput").val();
-    $("#hint").fadeIn();
-
+    if (parseInt(number) !== "number") {
+      alert("Oops, check the format of your number and try again.")
+    }
     resultArray = beepBoop(number, visitorName);
-
+    $("#hint").fadeIn(); 
     resultArray.forEach(function(element, index) {
       $("#result").append("<li>" + element + "</li>");
       $("#resultWithValues").append("<li>" + index + " => " + element + "</li>");
     })   
   })
+
   $("#hintReveal").click(function() {
     $("#result").hide();
     $("#resultWithValues").fadeIn();
     $("#reverseOption").fadeIn();
   })
+
   $("#reorder").click(function() {
     $("li").remove();
     resultArray.reverse().forEach(function(element) {
