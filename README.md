@@ -53,6 +53,9 @@ Enter a number and receive a sequence back with some fun word substitutions. Can
 
   Test: "It should recognize if a number in the sequence includes a 2, taking precedence over numbers with a 1"
   Expect(beepBoop(12).toEqual([0, "includesOne", "includesTwo", 3, 4, 5, 6, 7, 8, 9, "includesOne", "includesOne", "includesTwo"]);
+
+  Test: "It should recognize if a number in the sequence includes a 3, taking precedence over numbers with a 1 or 2"
+  Expect(beepBoop(13).toEqual([0, "includesOne", "includesTwo", "includesThree", 4, 5, 6, 7, 8, 9, "includesOne", "includesOne", "includesTwo", "includesThree"]);
   ```
 
 ## Known Bugs
