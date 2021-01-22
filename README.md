@@ -41,9 +41,12 @@ Enter a number and receive a sequence back with some fun word substitutions. Can
 ## Tests
   ```
   Describe: beepBoop()
-  
+
   Test: "It should return an array with a 0 if the number 0 is inputted"
   Expect(beepBoop(0).toEqual([0]);
+
+  Test: "It should return an array with a sequence of elements from 0 to the number inputted"
+  Expect(beepBoop(5).toEqual([0, 1, 2, 3, 4, 5]);
   ```
 
 ## Known Bugs
