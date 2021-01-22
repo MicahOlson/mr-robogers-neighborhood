@@ -26,15 +26,23 @@
       <p>Welcome to Mr. Roboger's Neighborhood, <span id="showName"></span>!</p>
       <p>
         To play the game, simply enter an number in the box below. When you submit it you'll see the sequence of all
+        whole
         numbers from 0 to your number, with some zany substitutions. Can you figure out the pattern?
       </p>
       <label for="numberInput" form="formNumber">Enter a number:</label>
       <input type="text" class="form-control" id="numberInput" form="formNumber"
         placeholder="This must be in Arabic numeral format (e.g., 23)" required>
       <button type="submit" class="btn btn-secondary" form="formNumber">Submit</button>
-      <ul id="resultWithNumbers">
-        
-      </ul>
+      <div class="row">
+        <div class="col-md-12 resultGroup">
+          <ul id="result">
+            <!-- DOM to be appended here by JS UI logic -->
+          </ul>
+          <ul id="resultWithValues">
+            <!-- DOM to be appended here by JS UI logic -->
+          </ul>
+        </div>
+      </div>
     </form>
   </div>
 </body>

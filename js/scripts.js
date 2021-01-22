@@ -32,7 +32,8 @@ $(document).ready(function() {
     event.preventDefault();
     const number = $("#numberInput").val();
     beepBoop(number).forEach(function(element, index) {
-      $("#resultWithNumbers").append("<li>" + index + " => " + element + "</li>");
-    })
+      $("#result").append("<li>" + element + "</li>");
+      $("#resultWithValues").append("<li>" + index + " => " + element + "</li>");
+    })   
   })
 })
