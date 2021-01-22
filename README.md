@@ -1,6 +1,6 @@
 # Mr. Roboger's Neighborhood
 
-### A number substitution game.
+### A number/word substitution game.
 
 ### _By Micah Olson_
 
@@ -12,31 +12,37 @@
 ## Description
 Enter a number and receive a sequence back with some fun word substitutions. Can you guess the pattern?
 
-## Setup/Installation Requirements
-* This project's live web page can be viewed [here](https://micaholson.github.io/mr-robogers-neighborhood).  
+## Setup and Installation Requirements
+* This project's interactive web page can be [viewed here](https://micaholson.github.io/mr-robogers-neighborhood)  
 
 * To download and view or edit a local copy yourself, follow the instructions below:  
 
-* Use git to clone the project into your local directory of choice ([how to install git](https://www.learnhowtoprogram.com/introduction-to-programming/getting-started-with-intro-to-programming/git-and-github)):  
-  `$ cd ~/[directory]/[path]/[of]/[choice]/`  
-  `$ git clone https://github.com/MicahOlson/mr-robogers-neighborhood.git`  
+  * Use git in your system's command-line shell to clone the project into your local directory of choice ([how to install git](https://www.learnhowtoprogram.com/introduction-to-programming/getting-started-with-intro-to-programming/git-and-github))  
+    `$ cd ~/[directory]/[path]/[of]/[choice]/`  
+    `$ git clone https://github.com/MicahOlson/mr-robogers-neighborhood.git`  
+  
+  * Navigate to the top level of the project directory  
+    `$ cd mr-robogers-neighborhood/`  
 
-* Remove all remotes nicknamed 'origin' pointing back to this repository:  
-  To view remotes  
-  `$ git remote -v`  
+  * Remove all remotes nicknamed 'origin' pointing back to this repository:  
+    * To view remotes  
+    `$ git remote -v`  
 
-  To remove remotes  
-  `$ git remote rm origin`    
-* Add new remotes pointing to your repositories of choice:  
-  `$ git remote add [location-nickname] [location]`     
+    * To remove remotes  
+    `$ git remote rm origin`  
+  
+    * To add new remotes pointing to your repositories of choice  
+      `$ git remote add [location-nickname] [location]`  
 
-* Navigate to the top level of the project directory  
-  `$ cd mr-robogers-neighborhood/`    
+  * To view the site locally, open the file called `index.html` in your default browser  
+    `$ open index.html`  
 
-* Open the main html file called index.html in your default browser  
-  `$ open index.html`  
+    * Alternatively, you can navigate to the project directory through your system's GUI file manager, then double-click `index.html` to open it in your default browser  
 
-* Alternatively, you can navigate to the project directory through Explorer on Windows, Finder on macOS, or whichever file manager you're using on Linux, then double-click index.html to open it in your system's default browser
+  * You can also open the project in your code editor of choice to view or edit the code. Here are some recommended code editors:
+    * [Visual Studio Code](https://code.visualstudio.com) - "Code editing. Redefined."
+    * [Atom](https://atom.io) - "A hackable text editor for the 21st Century"
+    * [SublimeText](https://www.sublimetext.com) - "A sophisticated text editor for code, markup and prose" 
 
 ## Tests
   ```
