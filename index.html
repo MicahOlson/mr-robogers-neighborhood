@@ -13,19 +13,22 @@
 
 <body>
   <div class="container">
-    <h1>Mr. Roboger's Neighborhood</h1>
-    <h2>A number/word substitution game</h2>
-    <form class="form-group" id="formName">
-      <label for="nameInput" form="formName">Hello, visitor! Before we start playing the game, what shall we call
-        you?</label>
-      <input type="text" class="form-control" id="nameInput" form="formName" placeholder="Enter your first name"
-        required>
-      <button type="submit" class="btn btn-secondary" form="formName">Submit</button>
-    </form>
+    <div class="jumbotron">
+      <h1>Mr. Roboger's Neighborhood</h1>
+      <h2>A number/word substitution game</h2>
+      <form class="form-group" id="formName">
+        <label for="nameInput" id="formNameLabel" form="formName">Hello, visitor! Before we start playing the game, what shall we call
+          you?</label>
+        <input type="text" class="form-control" id="nameInput" form="formName" placeholder="Enter your first name"
+          required>
+        <button type="submit" class="btn btn-secondary" form="formName">Submit</button>
+      </form>
+    </div>
+
     <form class="form-group" id="formNumber">
       <p>Welcome to Mr. Roboger's Neighborhood, <span id="showName"></span>!</p>
       <p>
-        To play the game, simply enter an number in the box below. When you submit it you'll see the sequence of all
+        To play the game, simply enter a number in the box below. When you submit it you'll see the sequence of all
         whole
         numbers from 0 to your number, with some zany substitutions. Can you figure out the pattern?
       </p>
@@ -34,11 +37,14 @@
         <div class="col-md-6">
           <label for="numberInput" form="formNumber">Enter a number:</label>
           <input type="text" class="form-control" id="numberInput" form="formNumber"
-            placeholder="This must be in Arabic numeral format (e.g., 23)" required>
+            placeholder="This must be an integer in Arabic numeral format (e.g., 23)" required>
           <button type="submit" class="btn btn-secondary" form="formNumber">Submit</button>
-          <p id="hint">Struggling to see what's going on? <span class="pseudoLink" id="hintReveal">Click here</span> for a hint.</p>
-          <p id="reverseOption">Maybe seeing it in reverse order will help. <span class="pseudoLink" id="reorder">Reorder</span>.</p>
-          <p id="newNumber">Maybe a bigger number will help. <span class="pseudoLink" id="clear">Clear and enter a new number</span>.</p>
+          <p id="hint">Struggling to see what's going on? <span class="pseudoLink" id="hintReveal">Click here</span> for
+            a hint.</p>
+          <p id="reverseOption">Maybe seeing it in reverse order will help. <span class="pseudoLink"
+              id="reorder">Reorder</span>.</p>
+          <p id="newNumber">Maybe a bigger number will help. <span class="pseudoLink" id="clear">Clear and enter a new
+              number</span>.</p>
         </div>
         <div class="col-md-6 resultGroup">
           <ul id="result">

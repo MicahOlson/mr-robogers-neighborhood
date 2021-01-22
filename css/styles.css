@@ -1,5 +1,32 @@
+/* * {
+  border: solid 1px #000000;
+} */
+
 body {
   background-color: #ffffff;
+}
+
+.jumbotron {
+  background-color: purple;
+  text-align: center;
+}
+
+h1, h2, #formNameLabel {
+  color: #ffffff;
+}
+
+.form-group {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+button {
+  margin-top: 20px;
+}
+
+#nameInput {
+  width: 50%;
+  margin: auto;
 }
 
 #formNumber, #resultWithValues, #resultReversed, #hint, #reverseOption, #newNumber {
@@ -8,7 +35,10 @@ body {
 
 .resultGroup ul {
   list-style-type: none;
-  /* text-align: center; */
+}
+
+#hint, #reverseOption, #newNumber {
+  margin-top: 40px;
 }
 
 .pseudoLink {
