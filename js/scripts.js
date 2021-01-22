@@ -43,7 +43,8 @@ $(document).ready(function() {
     $("#resultWithValues").fadeIn();
     $("#newNumber").fadeIn();
   })
-  $("#newNumber").click(function() {
+  $("#clear").click(function() {
+    $("#formNumber")[0].reset();
     $("li").remove();
     $("#resultWithValues").hide();
     $("#result").show();

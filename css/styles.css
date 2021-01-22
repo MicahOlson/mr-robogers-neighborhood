@@ -4,5 +4,14 @@
 
 .resultGroup ul {
   list-style-type: none;
-  text-align: center;
+  /* text-align: center; */
+}
+
+.pseudoLink {
+ cursor: pointer;
+ color: #0088cc;
+}
+
+.pseudoLink:hover {
+  text-decoration: underline;
 }
