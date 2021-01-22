@@ -1,19 +1,18 @@
-function beepBoop(input) {
+function beepBoop(numberAsString) {
   let sequence = [];
-  for (let i = 0; i <= parseInt(input); i++) {
-    sequence.push(i);
-  }
-  for (let i = 0; i < sequence.length; i++) {
-    let numberSet = [];
-    for (const digit of ("" + sequence[i])) {
-      numberSet.push(digit);
+  for (let i = 0; i <= parseInt(numberAsString); i++) {
+    let digits = [];
+    for (const digit of ("" + i)) {
+      digits.push(digit);
     }
-    if (numberSet.includes("3")) {
-      sequence[i] = "Won't you be my neighbor?";
-    } else if (numberSet.includes("2")) {
-      sequence[i] = "Boop!";
-    } else if (numberSet.includes("1")) {
-      sequence[i] = "Beep!";
+    if (digits.includes("3")) {
+      sequence.push("Won't you be my neighbor?");
+    } else if (digits.includes("2")) {
+      sequence.push("Boop!");
+    } else if (digits.includes("1")) {
+      sequence.push("Beep!");
+    } else {
+      sequence.push(i);
     }
   }
   return sequence;
