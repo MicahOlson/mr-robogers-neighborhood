@@ -36,7 +36,8 @@
           <input type="text" class="form-control" id="numberInput" form="formNumber"
             placeholder="This must be in Arabic numeral format (e.g., 23)" required>
           <button type="submit" class="btn btn-secondary" form="formNumber">Submit</button>
-          <p id="hint">Struggling to see what's going on? <span class="pseudoLink" id="hintReveal">Click here for a hint</span>.</p>
+          <p id="hint">Struggling to see what's going on? <span class="pseudoLink" id="hintReveal">Click here</span> for a hint.</p>
+          <p id="reverseOption">Maybe seeing it in reverse order will help. <span class="pseudoLink" id="reorder">Reorder</span>.</p>
           <p id="newNumber">Maybe a bigger number will help. <span class="pseudoLink" id="clear">Clear and enter a new number</span>.</p>
         </div>
         <div class="col-md-6 resultGroup">
@@ -44,6 +45,9 @@
             <!-- DOM to be appended here by JS UI logic -->
           </ul>
           <ul id="resultWithValues">
+            <!-- DOM to be appended here by JS UI logic -->
+          </ul>
+          <ul id="resultReversed">
             <!-- DOM to be appended here by JS UI logic -->
           </ul>
         </div>

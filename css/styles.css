@@ -1,4 +1,8 @@
-#formNumber, #resultWithValues, #hint, #newNumber {
+body {
+  background-color: #ffffff;
+}
+
+#formNumber, #resultWithValues, #resultReversed, #hint, #reverseOption, #newNumber {
   display: none;
 }
 

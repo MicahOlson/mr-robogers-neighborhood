@@ -1,4 +1,4 @@
-function beepBoop(numberAsString) {
+function beepBoop(numberAsString, name) {
   let sequence = [];
   for (let i = 0; i <= parseInt(numberAsString); i++) {
     let digits = [];
@@ -6,7 +6,7 @@ function beepBoop(numberAsString) {
       digits.push(digit);
     }
     if (digits.includes("3")) {
-      sequence.push("Won't you be my neighbor?");
+      sequence.push("Won't you be my neighbor, " + name +  "?");
     } else if (digits.includes("2")) {
       sequence.push("Boop!");
     } else if (digits.includes("1")) {
@@ -28,12 +28,15 @@ $(document).ready(function() {
     $("#formNumber").fadeIn();
   })
 
+  let resultArray;
   $("#formNumber").submit(function(event) {
     event.preventDefault();
     const number = $("#numberInput").val();
     $("#hint").fadeIn();
 
-    beepBoop(number).forEach(function(element, index) {
+    resultArray = beepBoop(number, visitorName);
+
+    resultArray.forEach(function(element, index) {
       $("#result").append("<li>" + element + "</li>");
       $("#resultWithValues").append("<li>" + index + " => " + element + "</li>");
     })   
@@ -41,8 +44,16 @@ $(document).ready(function() {
   $("#hintReveal").click(function() {
     $("#result").hide();
     $("#resultWithValues").fadeIn();
+    $("#reverseOption").fadeIn();
+  })
+  $("#reorder").click(function() {
+    $("li").remove();
+    resultArray.reverse().forEach(function(element) {
+      $("#resultWithValues").append("<li>" + element + "</li>");
+    }) 
     $("#newNumber").fadeIn();
   })
+
   $("#clear").click(function() {
     $("#formNumber")[0].reset();
     $("li").remove();
