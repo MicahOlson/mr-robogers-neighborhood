@@ -13,6 +13,17 @@
   <div class="container">
     <h1>Mr. Roboger's Neighborhood</h1>
     <h2>A number/word substitution game.</h2>
+    <form class="form-group" id="frmName">
+      <label for="nameInput" form="frmName">Hello, visitor! Before we start playing the game, what shall we call you?</label>
+      <input type="text" class="form-control" id="nameInput" form="frmName" placeholder="Enter your first name" required>
+      <button type="submit" class="btn btn-secondary" form="frmName">Submit</button>
+    </form>
+    <form class="form-group" id="frmNumber">
+      <p>Welcome to Mr. Roboger's Neighborhood, <span id="userName"></span>! To play the game, simply enter an number in the box below. When you submit it you'll see the sequence of all numbers from 0 to your number, with some substitutions. Can you figure out the pattern?</p>
+      <label for="numberInput" form="frmNumber">Enter a number:</label>
+      <input type="text" class="form-control" id="numberInput" form="frmNumber" placeholder="This must be in Arabic numeral format (e.g., 23)" required>
+      <button type="submit" class="btn btn-secondary" form="frmNumber">Submit</button>
+    </form>
   </div>
 </body>
 </html>
