@@ -31,9 +31,21 @@ $(document).ready(function() {
   $("#formNumber").submit(function(event) {
     event.preventDefault();
     const number = $("#numberInput").val();
+    $("#hint").fadeIn();
+
     beepBoop(number).forEach(function(element, index) {
       $("#result").append("<li>" + element + "</li>");
       $("#resultWithValues").append("<li>" + index + " => " + element + "</li>");
     })   
+  })
+  $("#hintReveal").click(function() {
+    $("#result").hide();
+    $("#resultWithValues").fadeIn();
+    $("#newNumber").fadeIn();
+  })
+  $("#newNumber").click(function() {
+    $("li").remove();
+    $("#resultWithValues").hide();
+    $("#result").show();
   })
 })

@@ -1,4 +1,4 @@
-#formNumber, #resultWithValues {
+#formNumber, #resultWithValues, #hint, #newNumber {
   display: none;
 }
 
