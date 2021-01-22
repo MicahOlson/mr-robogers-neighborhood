@@ -1,0 +1,56 @@
+# Mr. Roboger's Neighborhood
+
+### A number substitution game.
+
+### _By Micah Olson_
+
+## Technologies Used
+* HTML5
+* CSS (extended by Bootstrap 4.5.3)
+* JavaScript (extended by jQuery 3.5.1)
+
+## Description
+Enter a number and receive a sequence back with some fun word substitutions. Can you guess the pattern?
+
+## Setup/Installation Requirements
+* This project's live web page can be viewed [here](https://micaholson.github.io/mr-robogers-neighborhood).  
+
+* To download and view or edit a local copy yourself, follow the instructions below:  
+
+* Use git to clone the project into your local directory of choice ([how to install git](https://www.learnhowtoprogram.com/introduction-to-programming/getting-started-with-intro-to-programming/git-and-github)):  
+  `$ cd ~/[directory]/[path]/[of]/[choice]/`  
+  `$ git clone https://github.com/MicahOlson/mr-robogers-neighborhood.git`  
+
+* Remove all remotes nicknamed 'origin' pointing back to this repository:  
+  To view remotes  
+  `$ git remote -v`  
+
+  To remove remotes  
+  `$ git remote rm origin`    
+* Add new remotes pointing to your repositories of choice:  
+  `$ git remote add [location-nickname] [location]`     
+
+* Navigate to the top level of the project directory  
+  `$ cd mr-robogers-neighborhood/`    
+
+* Open the main html file called index.html in your default browser  
+  `$ open index.html`  
+
+* Alternatively, you can navigate to the project directory through Explorer on Windows, Finder on macOS, or whichever file manager you're using on Linux, then double-click index.html to open it in your system's default browser
+
+## Tests
+  ```
+  Describe:
+  Test:
+  Expect()
+  ```
+
+## Known Bugs
+* No known bugs.
+* Please let me know of any bugs you find at the email address below. 
+
+## License
+[GPL](https://choosealicense.com/licenses/gpl-3.0/)
+
+## Contact Information
+Micah L. Olson micah@fakemail.com
