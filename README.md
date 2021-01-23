@@ -66,8 +66,8 @@ Enter a number and receive a sequence back with some fun word substitutions. Can
   ```
 
 ## Known Bugs
-* No known bugs.
-* Please let me know of any bugs you find at the email address below. 
+* The program will fail to generate the game's number sequence if a non-numeric value is inputted
+* Please let me know of any bugs you find at the email address below 
 
 ## License
 [GPL](https://choosealicense.com/licenses/gpl-3.0/)
