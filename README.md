@@ -1,3 +1,4 @@
+![Screenshot of Mr. Roboger's Neighborhood](img/robogers.png)
 # Mr. Roboger's Neighborhood
 
 ### A number/word substitution game.
