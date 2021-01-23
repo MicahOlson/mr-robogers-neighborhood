@@ -17,8 +17,7 @@
       <h1>Mr. Roboger's Neighborhood</h1>
       <h2>A number/word substitution game</h2>
       <form class="form-group" id="formName">
-        <label for="nameInput" id="formNameLabel" form="formName">Hello, visitor! Before we start playing the game, what shall we call
-          you?</label>
+        <label for="nameInput" id="formNameLabel" form="formName">Hello, visitor! Before we start playing the game, how should we address you?</label>
         <input type="text" class="form-control" id="nameInput" form="formName" placeholder="Enter your first name"
           required>
         <button type="submit" class="btn btn-secondary" form="formName">Submit</button>
@@ -30,7 +29,7 @@
       <p>
         To play the game, simply enter a number in the box below. When you submit it you'll see the sequence of all
         whole
-        numbers from 0 to your number, with some zany substitutions. Can you figure out the pattern?
+        numbers from 0 to your number, with some zany substitutions mixed in. Can you figure out the pattern the substitutions follow?
       </p>
 
       <div class="row">
@@ -39,11 +38,10 @@
           <input type="text" class="form-control" id="numberInput" form="formNumber"
             placeholder="This must be an integer in Arabic numeral format (e.g., 23)" required>
           <button type="submit" class="btn btn-secondary" form="formNumber">Submit</button>
-          <p id="hint">Struggling to see what's going on? <span class="pseudoLink" id="hintReveal">Click here</span> for
-            a hint.</p>
-          <p id="reverseOption">Maybe seeing it in reverse order will help. <span class="pseudoLink"
+          <p id="hint">Struggling to see what's going on?<br><span class="pseudoLink" id="hintReveal">Click here</span> to toggle a hint.</p>
+          <p id="reverseOption">Maybe seeing it in reverse order will help.<br><span class="pseudoLink"
               id="reorder">Reorder</span>.</p>
-          <p id="newNumber">Maybe a bigger number will help. <span class="pseudoLink" id="clear">Clear and enter a new
+          <p id="newNumber">Maybe a bigger number will help.<br><span class="pseudoLink" id="clear">Clear and enter a new
               number</span>.</p>
         </div>
         <div class="col-md-6 resultGroup">

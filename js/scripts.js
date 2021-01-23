@@ -32,9 +32,6 @@ $(document).ready(function() {
   $("#formNumber").submit(function(event) {
     event.preventDefault();
     const number = $("#numberInput").val();
-    if (parseInt(number) !== "number") {
-      alert("Oops, check the format of your number and try again.")
-    }
     resultArray = beepBoop(number, visitorName);
     $("#hint").fadeIn(); 
     resultArray.forEach(function(element, index) {
@@ -44,8 +41,8 @@ $(document).ready(function() {
   })
 
   $("#hintReveal").click(function() {
-    $("#result").hide();
-    $("#resultWithValues").fadeIn();
+    $("#result").toggle();
+    $("#resultWithValues").toggle();
     $("#reverseOption").fadeIn();
   })
 

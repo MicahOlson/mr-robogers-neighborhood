@@ -29,6 +29,10 @@ button {
   margin: auto;
 }
 
+.resultGroup {
+  margin-top: 40px;
+}
+
 #formNumber, #resultWithValues, #resultReversed, #hint, #reverseOption, #newNumber {
   display: none;
 }
