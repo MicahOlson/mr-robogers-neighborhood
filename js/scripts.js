@@ -18,9 +18,9 @@ function beepBoop(number, name) {
   return sequence;
 }
 
-$(document).ready(function () {
+$(document).ready(function() {
   let visitorName;
-  $("#formName").submit(function (event) {
+  $("#formName").submit(function(event) {
     event.preventDefault();
     visitorName = $("#nameInput").val();
     $("#showName").text(visitorName);
@@ -29,37 +29,39 @@ $(document).ready(function () {
   });
 
   let sequenceArray;
-  $("#formNumber").submit(function (event) {
+  $("#formNumber").submit(function(event) {
     event.preventDefault();
+    $("li").remove();
     const userNumber = parseInt($("#numberInput").val());
     if (isNaN(userNumber) || userNumber < 1) {
       alert("Oops, please check that your number is a positive integer.");
     } else {
-      $("#hint").fadeIn();
+      $("#hint").fadeIn(5000);
       sequenceArray = beepBoop(userNumber, visitorName);
-      sequenceArray.forEach(function (element, index) {
+      sequenceArray.forEach(function(element, index) {
         $("#result").append("<li>" + element + "</li>");
         $("#resultWithValues").append("<li>" + index + " => " + element + "</li>");
       })
     }
   });
 
-  $("#hintReveal").click(function () {
+  $("#hintReveal").click(function() {
     $("#result").toggle();
     $("#resultWithValues").toggle();
-    $("#reverseOption").fadeIn();
+    $("#reverseOption").fadeIn(5000);
   });
 
-  $("#reorder").click(function () {
-    $("li").remove();
-    $("#result").show();
-    sequenceArray.reverse().forEach(function (element) {
-      $("#resultWithValues").append("<li>" + element + "</li>");
+  $("#reorder").click(function() {
+    $("#resultWithValues").hide();
+    $("ul#result li").remove()
+    sequenceArray.reverse().forEach(function(element) {
+      $("#result").append("<li>" + element + "</li>");
     })
-    $("#newNumber").fadeIn();
+    $("#result").show();
+    $("#enterNewNumber").fadeIn(5000);
   });
 
-  $("#clear").click(function () {
+  $("#clear").click(function() {
     $("#formNumber")[0].reset();
     $("li").remove();
     $("#resultWithValues").hide();

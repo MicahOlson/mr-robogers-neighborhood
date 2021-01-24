@@ -29,7 +29,7 @@ button {
   margin-top: 40px;
 }
 
-#formNumber, #resultWithValues, #resultReversed, #hint, #reverseOption, #newNumber {
+#formNumber, #resultWithValues, #resultReversed, #hint, #reverseOption, #enterNewNumber {
   display: none;
 }
 
@@ -37,7 +37,7 @@ button {
   list-style-type: none;
 }
 
-#hint, #reverseOption, #newNumber {
+#hint, #reverseOption, #enterNewNumber {
   margin-top: 40px;
 }
 
