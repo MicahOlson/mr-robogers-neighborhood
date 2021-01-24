@@ -20,7 +20,8 @@
         <label for="nameInput" id="formNameLabel" form="formName">
           Hello, visitor! Before we start playing the game, how should we address you?
         </label>
-        <input type="text" class="form-control" id="nameInput" form="formName" placeholder="Enter your first name" required>
+        <input type="text" class="form-control" id="nameInput" form="formName" placeholder="Enter your first name"
+          required>
         <button type="submit" class="btn btn-secondary" form="formName">Submit</button>
       </form>
     </div>
@@ -39,16 +40,28 @@
           <input type="text" class="form-control" id="numberInput" form="formNumber"
             placeholder="Enter a positive integer here (e.g., 23)" required>
           <button type="submit" class="btn btn-secondary" form="formNumber">Submit</button>
-          <p id="hint">
-            Can you find the pattern in the sequence to the right?<br><span class="pseudoLink" id="hintReveal">Click here</span> to toggle a hint.
+          
+          <p class="alert alert-dark" role="alert" id="hint">
+            Can you find the pattern in the sequence to the right?<br><span class="pseudoLink" id="hintReveal">Click
+              here</span> to toggle a hint.
           </p>
-          <p id="reverseOption">
+          <p class="alert alert-dark" role="alert" id="reverseOption">
             Maybe seeing it in reverse order will help.<br><span class="pseudoLink" id="reorder">Reorder</span>.
           </p>
-          <p id="enterNewNumber">
+          <p class="alert alert-dark" role="alert" id="enterNewNumber">
             Maybe a bigger number will help.<br><span class="pseudoLink" id="clear">Clear and enter a new number</span>.
           </p>
+          <p class="alert alert-dark" role="alert" id="giveUp">
+            Give up?<br><span class="pseudoLink" id="answerReveal">Click here</span> for the answer.
+          </p>
+          <div class="alert alert-secondary" role="alert" id="answer">
+            <p>Any number containing a 1 is replaced by "Beep!"</p>
+            <p>Any number containing a 2 is replaced by "Boop!"</p>
+            <p>Any number containing a 3 is replaced by "Won't you be my neighbor?"</p>
+            <p>Numbers with a 3 take precedence over numbers with a 2, which take precedence over numbers with a 1.</p>
+          </div>
         </div>
+        
         <div class="col-md-6 resultGroup">
           <ul id="result">
             <!-- DOM to be appended here by JS UI logic -->

@@ -36,7 +36,7 @@ $(document).ready(function() {
     if (isNaN(userNumber) || userNumber < 1) {
       alert("Oops, please check that your number is a positive integer.");
     } else {
-      $("#hint").fadeIn(5000);
+      $("#hint").fadeIn(3000);
       sequenceArray = beepBoop(userNumber, visitorName);
       sequenceArray.forEach(function(element, index) {
         $("#result").append("<li>" + element + "</li>");
@@ -48,7 +48,7 @@ $(document).ready(function() {
   $("#hintReveal").click(function() {
     $("#result").toggle();
     $("#resultWithValues").toggle();
-    $("#reverseOption").fadeIn(5000);
+    $("#reverseOption").fadeIn(3000);
   });
 
   $("#reorder").click(function() {
@@ -58,7 +58,7 @@ $(document).ready(function() {
       $("#result").append("<li>" + element + "</li>");
     })
     $("#result").show();
-    $("#enterNewNumber").fadeIn(5000);
+    $("#enterNewNumber").fadeIn(3000);
   });
 
   $("#clear").click(function() {
@@ -66,5 +66,10 @@ $(document).ready(function() {
     $("li").remove();
     $("#resultWithValues").hide();
     $("#result").show();
+    $("#giveUp").fadeIn(3000);
+  });
+
+  $("#answerReveal").click(function() {
+    $('#answer').slideDown();
   });
 });

@@ -29,7 +29,7 @@ button {
   margin-top: 40px;
 }
 
-#formNumber, #resultWithValues, #resultReversed, #hint, #reverseOption, #enterNewNumber {
+#formNumber, #resultWithValues, #resultReversed, #hint, #reverseOption, #enterNewNumber, #giveUp, #answer {
   display: none;
 }
 
@@ -37,8 +37,13 @@ button {
   list-style-type: none;
 }
 
-#hint, #reverseOption, #enterNewNumber {
+#hint, #reverseOption, #enterNewNumber, #giveUp {
   margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+#answer {
+  background-color: white;
 }
 
 .pseudoLink {
