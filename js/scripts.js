@@ -1,12 +1,12 @@
-function beepBoop(numberAsString, name) {
+function beepBoop(number, name) {
   let sequence = [];
-  for (let i = 0; i <= parseInt(numberAsString); i++) {
+  for (let i = 0; i <= number; i++) {
     let digits = [];
     for (const digit of ("" + i)) {
       digits.push(digit);
     }
     if (digits.includes("3")) {
-      sequence.push("Won't you be my neighbor, " + name +  "?");
+      sequence.push("Won't you be my neighbor, " + name + "?");
     } else if (digits.includes("2")) {
       sequence.push("Boop!");
     } else if (digits.includes("1")) {
@@ -18,46 +18,51 @@ function beepBoop(numberAsString, name) {
   return sequence;
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
   let visitorName;
-  $("#formName").submit(function(event) {
+  $("#formName").submit(function (event) {
     event.preventDefault();
     visitorName = $("#nameInput").val();
     $("#showName").text(visitorName);
     $("#formName").hide();
     $("#formNumber").fadeIn();
-  })
+  });
 
-  let resultArray;
-  $("#formNumber").submit(function(event) {
+  let sequenceArray;
+  $("#formNumber").submit(function (event) {
     event.preventDefault();
-    const number = $("#numberInput").val();
-    resultArray = beepBoop(number, visitorName);
-    $("#hint").fadeIn(); 
-    resultArray.forEach(function(element, index) {
-      $("#result").append("<li>" + element + "</li>");
-      $("#resultWithValues").append("<li>" + index + " => " + element + "</li>");
-    })   
-  })
+    const userNumber = parseInt($("#numberInput").val());
+    if (isNaN(userNumber) || userNumber < 1) {
+      alert("Oops, please check that your number is a positive integer.");
+    } else {
+      $("#hint").fadeIn();
+      sequenceArray = beepBoop(userNumber, visitorName);
+      sequenceArray.forEach(function (element, index) {
+        $("#result").append("<li>" + element + "</li>");
+        $("#resultWithValues").append("<li>" + index + " => " + element + "</li>");
+      })
+    }
+  });
 
-  $("#hintReveal").click(function() {
+  $("#hintReveal").click(function () {
     $("#result").toggle();
     $("#resultWithValues").toggle();
     $("#reverseOption").fadeIn();
-  })
+  });
 
-  $("#reorder").click(function() {
+  $("#reorder").click(function () {
     $("li").remove();
-    resultArray.reverse().forEach(function(element) {
+    $("#result").show();
+    sequenceArray.reverse().forEach(function (element) {
       $("#resultWithValues").append("<li>" + element + "</li>");
-    }) 
+    })
     $("#newNumber").fadeIn();
-  })
+  });
 
-  $("#clear").click(function() {
+  $("#clear").click(function () {
     $("#formNumber")[0].reset();
     $("li").remove();
     $("#resultWithValues").hide();
     $("#result").show();
-  })
-})
+  });
+});
