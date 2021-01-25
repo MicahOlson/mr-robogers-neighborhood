@@ -1,6 +1,3 @@
-<!-- ![Screenshot of Mr. Roboger's Neighborhood](img/robogers.png) -->
-<img src="img/robogers.png" alt="Preview of Mr. Roboger's Neighborhood">  
-
 # Mr. Roboger's Neighborhood
 
 ### A number/word substitution game.
@@ -13,7 +10,9 @@
 * JavaScript (extended by jQuery 3.5.1)
 
 ## Description
-Enter a number and receive a sequence back with some fun word substitutions. Can you guess the pattern?  
+Submit a number to receive a sequence of whole numbers, from 0 to your number, with some fun word substitutions. Can you guess the pattern?  
+
+<img src="img/robogers-game.png" alt="Preview of Mr. Roboger's Neighborhood"> 
 
 ## Setup and Installation
 * This project's interactive web page can be viewed [here](https://micaholson.github.io/mr-robogers-neighborhood).  
