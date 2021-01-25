@@ -22,16 +22,19 @@ $(document).ready(function() {
   let visitorName;
   $("#formName").submit(function(event) {
     event.preventDefault();
+    
     visitorName = $("#nameInput").val();
     $("#showName").text(visitorName);
     $("#formName").hide();
-    $("#formNumber").fadeIn();
+    $("#gamePage").fadeIn();
   });
 
   let sequenceArray;
   $("#formNumber").submit(function(event) {
     event.preventDefault();
+    
     $("li").remove();
+    
     const userNumber = parseInt($("#numberInput").val());
     if (isNaN(userNumber) || userNumber < 1) {
       alert("Oops, please check that your number is a positive integer.");
@@ -54,10 +57,12 @@ $(document).ready(function() {
   $("#reorder").click(function() {
     $("#resultWithValues").hide();
     $("ul#result li").remove()
+    
     sequenceArray.reverse().forEach(function(element) {
       $("#result").append("<li>" + element + "</li>");
     })
     $("#result").show();
+    
     $("#enterNewNumber").fadeIn(3000);
   });
 
