@@ -26,57 +26,59 @@
       </form>
     </div>
 
-    <form class="form-group" id="formNumber">
+    <div id="gamePage">
       <p>Welcome to Mr. Roboger's Neighborhood, <span id="showName"></span>!</p>
       <p>
         To play the game, simply enter a number in the box below. When you
-        submit it you'll see the sequence of all whole numbers from 0 to your
+        submit it, you'll see the sequence of all whole numbers from 0 to your
         number, with some zany substitutions mixed in. Can you figure out the
         pattern the substitutions follow?
       </p>
 
       <div class="row">
         <div class="col-md-6">
-          <input type="text" class="form-control" id="numberInput" form="formNumber"
-            placeholder="Enter a positive integer here (e.g., 23)" required>
-          <button type="submit" class="btn btn-secondary" form="formNumber">Submit</button>
+          <form class="form-group" id="formNumber">
+            <input type="text" class="form-control" id="numberInput" form="formNumber"
+              placeholder="Enter a positive integer here (e.g., 23)" required>
+            <button type="submit" class="btn btn-secondary" form="formNumber">Submit</button>
+          </form>
           <div class="resultGroup">
             <ul id="result">
-              <!-- DOM to be appended here by JS UI logic -->
+              <!-- DOM to be appended here by logic in scripts.js -->
             </ul>
             <ul id="resultWithValues">
-              <!-- DOM to be appended here by JS UI logic -->
+              <!-- DOM to be appended here by logic in scripts.js -->
             </ul>
             <ul id="resultReversed">
-              <!-- DOM to be appended here by JS UI logic -->
+              <!-- DOM to be appended here by logic in scripts.js -->
             </ul>
           </div>
         </div>
 
         <div class="col-md-6">
           <p class="alert alert-dark" role="alert" id="hint">
-            Can you find the pattern in the sequence to the left?<br><span class="pseudoLink" id="hintReveal">Click
-              here</span> to toggle a hint.
+            Do you recognize a pattern in the sequence?<br><span class="pseudoLink" id="hintReveal">Click here</span> to toggle a hint.
           </p>
           <p class="alert alert-dark" role="alert" id="reverseOption">
             Maybe seeing it in reverse order will help.<br><span class="pseudoLink" id="reorder">Reorder</span>.
           </p>
           <p class="alert alert-dark" role="alert" id="enterNewNumber">
-            Maybe a bigger number will help.<br><span class="pseudoLink" id="clear">Clear and enter a new number</span>.
+            Maybe a bigger number will shed some light on things.<br><span class="pseudoLink" id="clear">Clear the list and enter a new number</span>.
           </p>
           <p class="alert alert-dark" role="alert" id="giveUp">
-            Give up?<br><span class="pseudoLink" id="answerReveal">Click here</span> for the answer.
+            Did you get it?<br><span class="pseudoLink" id="answerReveal">Click here</span> for the answer.
           </p>
           <div class="alert alert-secondary" role="alert" id="answer">
             <p>Any number containing a 1 is replaced by "Beep!"</p>
             <p>Any number containing a 2 is replaced by "Boop!"</p>
             <p>Any number containing a 3 is replaced by "Won't you be my neighbor?"</p>
             <p>Numbers with a 3 take precedence over numbers with a 2, which take precedence over numbers with a 1.</p>
+            <p id="thanksForPlaying"><b>THANKS FOR PLAYING!</b></p>
           </div>
-        </div>
 
+        </div>
       </div>
-    </form>
+    </div>
   </div>
 </body>
 
