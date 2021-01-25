@@ -57,8 +57,8 @@ Submit a number to receive a sequence of whole numbers, from 0 to your number, w
   ```
 
 ## Known Bugs
-* The program will fail to generate the game's number sequence if a non-numeric value is inputted
-* Please let me know of any bugs you find at the email address below 
+* No known bugs.
+* Please contact me at the email address below if you'd like to report a bug.
 
 ## License
 [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)\
