@@ -3,7 +3,7 @@ body {
 }
 
 .jumbotron {
-  background-color: purple;
+  background-color: #800080;
   text-align: center;
 }
 
@@ -25,31 +25,42 @@ button {
   margin: auto;
 }
 
+#numberInput {
+  width: 75%;
+  float: left;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+#showName {
+  font-weight: bold;
+}
+
+#formNumber {
+  margin-top: 0px;
+}
+
 .resultGroup {
   margin-top: 40px;
-}
-
-li {
-  font-size: 18px;
-  margin-left: 60px;
-  margin-bottom: 5px;
-}
-
-#formNumber, #resultWithValues, #resultReversed, #hint, #reverseOption, #enterNewNumber, #giveUp, #answer {
-  display: none;
 }
 
 .resultGroup ul {
   list-style-type: none;
 }
 
-#reverseOption, #enterNewNumber, #giveUp {
-  margin-top: 40px;
+li {
+  font-size: 18px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+#hint, #reverseOption, #enterNewNumber, #giveUp {
+  margin-top: 20px;
   margin-bottom: 0px;
 }
 
 #answer {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .pseudoLink {
@@ -59,4 +70,12 @@ li {
 
 .pseudoLink:hover {
   text-decoration: underline;
+}
+
+#thanksForPlaying {
+  text-align: center;
+}
+
+#gamePage, #resultWithValues, #resultReversed, #hint, #reverseOption, #enterNewNumber, #giveUp, #answer {
+  display: none;
 }
